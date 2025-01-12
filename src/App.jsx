@@ -1,4 +1,3 @@
-// App.jsx
 import Buttons from "./components/Buttons";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import "./index.css"; // Tailwind CSS buradan import edilmeli
@@ -48,7 +47,7 @@ const App = () => {
         <Header />
 
         {/* Sayfa İçeriği */}
-        <div className="flex-1 overflow-y-auto p-6 text-sm">
+        <div className="flex-1 overflow-y-auto p-6 text-sm scrollbar-thin scrollbar-thumb-[#323232] scrollbar-track-[#212121] scrollbar-thumb-rounded">
           <Routes>
             <Route path="/Hakkımda" element={<About />} />
             <Route path="/Projelerim" element={<Projects />} />
@@ -72,7 +71,7 @@ const App = () => {
                 <button
                   key={route}
                   onClick={() => handleButtonClick(route)}
-                  className="w-full px-4 py-2 text-white rounded hover:bg-[#555] ml-2"
+                  className="w-full px-4 py-2 text-white rounded ml-2"
                 >
                   {route.charAt(0).toUpperCase() + route.slice(1)}
                 </button>

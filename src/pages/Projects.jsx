@@ -42,7 +42,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#212121] text-white p-6">
+    <div className="min-h-screen bg-[#212121] text-white p-6 scroll-none  ">
       <div className="flex flex-col gap-6 w-full">
         {visibleProjects.map((project, index) => (
           <div

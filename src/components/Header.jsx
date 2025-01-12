@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav className="flex items-center justify-center gap-2 text-white mt-2">
+        <nav className="flex   items-center justify-center gap-2 text-white mt-2 text-sm md:text-xl font-semibold   ">
           <div>
             <h1>Kubilay Taşkafa's Portfolio</h1>
           </div>
